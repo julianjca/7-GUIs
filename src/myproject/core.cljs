@@ -2,14 +2,16 @@
     (:require
       [reagent.core :as r]
       [reagent.dom :as d]
-      [myproject.components.counter :refer [counter]]))
+      [myproject.components.counter :refer [counter]]
+      [myproject.components.temperature :refer [temperature]]))
 
 ;; -------------------------
 ;; Views
 
 (defn home-page []
-  [:div [:h2 "Welcome to Reagent"]
+  [:div [:h2 "7 GUIs Challenge"]
   [counter]
+  [temperature]
   ])
 
 ;; -------------------------

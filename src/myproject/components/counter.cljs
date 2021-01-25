@@ -6,6 +6,7 @@
 (defn counter
   []
   [:div 
+    [:h4 "Counter"]
     [:div @click-count]
     [:button {:on-click #(swap! click-count inc)} "count" ]
   ]
